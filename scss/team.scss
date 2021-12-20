@@ -1,0 +1,104 @@
+.team {
+	background-color: #5036E6;
+	margin: 0;
+	padding: 0;
+	min-height: 868px;
+
+	&__inner {
+		padding-top: 80px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__gallery-image {
+		width: 320px;
+		height: 320px;
+		border-radius: 15px;
+	}
+
+	&__gallery-slide {
+		width: 320px;
+	}
+
+	&__gallery {
+		width: 100%;
+		margin-top: 110px;
+	}
+
+	&__gallery-title {
+		display: block;
+		color: white;
+		font-family: "Noto_Sans", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 130%;
+		letter-spacing: 0.055em;
+	}
+
+	&__gallery-subtitle {
+		display: block;
+		color: white;
+		font-family: "Noto_Sans", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 130%;
+	}
+
+	&__gallery-wrapper {
+		justify-content: space-between;
+		height: 80%;
+	}
+
+	&__gallery-pagination {
+		display: none;
+	}
+
+	@media screen and (max-width: 320px){
+		&__gallery-pagination {
+			display: flex;
+			position: relative;
+			height: 80px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__gallery-image {
+			width: 280px;
+			height: 280px;
+		}
+	}
+
+	&__pagination-dot {
+		height: 8px;
+		width: 8px;
+		background-color: rgba(255,255,255,0.2);
+	}
+
+	@media screen and (max-width: 325px){
+		&__gallery {
+			margin-top: 60px;
+		}
+
+		&__gallery-title {
+			font-size: 18px;
+			text-align: center;
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+
+		&__gallery-subtitle {
+			font-size: 12px;
+			text-align: center;
+		}
+
+		& {
+			min-height: 685px;
+		}
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgba(255,255,255,1);
+}
