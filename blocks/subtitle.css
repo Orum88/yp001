@@ -1,0 +1,17 @@
+.subtitle {
+  font-family: "Noto_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 500px;
+  color: white;
+  margin-top: 40px;
+  line-height: 130%;
+}
+@media screen and (max-width: 325px) {
+  .subtitle {
+    font-size: 12px;
+    max-width: 264px;
+  }
+}
+
+/*# sourceMappingURL=subtitle.css.map */

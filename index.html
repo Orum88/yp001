@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шахматный клуб</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./blocks/index.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner wrapper">
+            <img src="./images/logo.svg" alt="Логотип" class="logo">
+            <div class="header__buttons">
+                <a href="" class="header__link">Вступайте в клуб <img src="./images/arrow.svg" alt="Стрелка" class="header__arrow"></a>
+                <button class="button__main">Зарегистрироваться</button>
+            </div>
+        </div>
+    </header>
+<main class="main">
+    <section class="main-section">
+        <div class="wrapper main-section__inner">
+            <div class="main-section__info">
+                <div class="main-section__mobile">
+                    <button class="button__subheader">КЛУБ</button>
+                    <img src="./images/header-mobile.svg" alt="Круги" class="main-section__mobile-image">
+                </div>
+                <h1 class="title">Правильные шахматы</h1>
+                <p class="subtitle">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц состязании и бою с гройсмейстером.</p>
+                <img src="./images/header-chess-desk.svg" alt="Шахматная доска" class="main-section__subimage">
+            </div>
+            <img src="./images/header-main.svg" alt="Круги" class="main-section__main-image">
+        </div>
+    </section>
+<section class="team">
+    <div class="wrapper team__inner">
+        <div class="main-section__info">
+            <h2 class="title">Наша команда</h2>
+            <p class="subtitle">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
+        </div>
+        <div class="team__gallery swiper mySwiper">
+            <div class="team__gallery-wrapper swiper-wrapper">
+                <div class="team__gallery-slide swiper-slide">
+                    <img src="./images/card_andrew.svg" alt="Фото" class="team__gallery-image">
+                    <span class="team__gallery-title">Андрей</span>
+                    <span class="team__gallery-subtitle">Шахматист, писатель.</span>
+                </div>
+                <div class="team__gallery-slide swiper-slide">
+                    <img src="./images/card_nikita.svg" alt="Фото" class="team__gallery-image">
+                    <span class="team__gallery-title">Никита</span>
+                    <span class="team__gallery-subtitle">Шахматист, кулинар.</span>
+                </div>
+                <div class="team__gallery-slide swiper-slide">
+                    <img src="./images/card_alexey.svg" alt="Фото" class="team__gallery-image">
+                    <span class="team__gallery-title">Алексей</span>
+                    <span class="team__gallery-subtitle">Шахматист, геймер.</span>
+                </div>
+            </div>
+            <div class="team__gallery-pagination swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+    <section class="wanted">
+        <div class="wrapper wanted__inner">
+       <div class="wanted__image">
+           <img src="./images/team-wanted-image.svg" alt="Картинка с кругами" class="team__mainimage">
+       </div>
+        <div class="wanted__image-mobile">
+            <img src="./images/round-mobile.svg" alt="Картинка с кругами">
+        </div>
+<div class="main-section__info">
+    <p class="title">Хочешь в команду?</p>
+    <p class="subtitle">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+</div>
+        </div>
+    </section>
+    <section class="war">
+        <div class="wrapper war__inner">
+            <div class="main-section__info">
+                 <p class="title">Сражения</p>
+                 <p class="subtitle">Сражайтесь в парах и приятно проводите время.Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.</p>
+             </div>
+            <div class="team__gallery swiper mySwiper">
+                <div class="team__gallery-wrapper swiper-wrapper">
+                    <div class="team__gallery-slide swiper-slide">
+                        <img src="./images/card1.svg" alt="Фото" class="team__gallery-image">
+                    </div>
+                    <div class="team__gallery-slide swiper-slide">
+                        <img src="./images/card2.svg" alt="Фото" class="team__gallery-image">
+                    </div>
+                    <div class="team__gallery-slide swiper-slide">
+                        <img src="./images/card3.svg" alt="Фото" class="team__gallery-image">
+                    </div>
+                </div>
+                <div class="team__gallery-pagination swiper-pagination"></div>
+            </div>
+            <div class="war__footer">
+                <img src="./images/war__image.svg" alt="Полукруги" class="war__image">
+                <img src="./images/war-chest.svg" alt="Шахматная доска" class="war__chess">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <img src="./images/logo.svg" alt="Шахматная фигура" class="logo logo__footer">
+    <button class="button__main button__main_footer">Зарегистрироваться</button>
+    <p class="footer__title">Шахматный клуб в Москве.</p>
+    <p class="footer__subtitle">© Chees Club.</p>
+</footer>
+<div class="popup popup_info">
+    <div class="popup__container">
+        <img src="./images/logo.svg" alt="Шахматная фигура" class="logo__popup">
+        <h2 class="popup__title">Регистрация</h2>
+        <form class="popup__form profile-edit" id="profile-edit" name="profile-edit">
+            <input value="Имя" id="name" type="text" class="popup__input" name="card_name" required>
+            <input value="Email" id="description" type="text" class="popup__input" name="card_job" required>
+        </form>
+        <button type="submit" class="button__main button__close button__main_popup">Зарегистрироваться</button>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./scripts/index.js"></script>
+
+</body>
+</html>

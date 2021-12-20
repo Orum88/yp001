@@ -1,0 +1,33 @@
+.header {
+  background-color: black;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 106px;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Noto_Sans", sans-serif;
+  font-weight: 400;
+  margin-right: 50px;
+}
+.header__arrow {
+  margin-left: 15px;
+  display: inline-block;
+}
+@media screen and (min-width: 325px) and (max-width: 500px) {
+  .header__link {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
